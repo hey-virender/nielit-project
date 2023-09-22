@@ -1,0 +1,32 @@
+.headsection{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 100%;
+    
+}
+.logo{
+    background-image:url("logo.png");
+    height: 90px;
+    width: 90px;
+    background-size: cover;
+    margin-right: 50%;
+}
+input{
+    width: 70%;
+    padding: 8px 20px 8px 45px;
+    border: #fff soild 2px;
+    font-size: 18px;
+    border-radius:25px;
+    background-position: 2% 50%;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background:linear-gradient(30deg,black,white) ;
+    transition: 0.5s all ease-in-out;
+    filter: brightness(170%)
+}
+input :focus{
+    width: 350px;
+    background-color: white;
+    filter: brightness(100%);
+}
