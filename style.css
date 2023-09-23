@@ -103,3 +103,6 @@ background-size: cover;
   background-image: url(HOME\ APPLIANCES.jpg);
   background-size: cover;
 }
+.shopbox{
+  border-radius: 15%;
+}
