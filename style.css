@@ -1,5 +1,5 @@
 body{
-    background-image: url("background.jpg");
+    background-image: url("Images/background.jpg");
     background-blend-mode: lighten;
 }
 .headsection{
@@ -10,7 +10,7 @@ body{
     
 }
 .logo{
-    background-image:url("logo.png");
+    background-image:url("Images/background.jpg");
     height: 90px;
     width: 90px;
     background-size:contain;
@@ -75,32 +75,32 @@ input:focus{
 }
 
 .box-1 {
-  background-image: url(ELECTRONICS.jpg);
+  background-image: url("Images/ELECTRONICS.jpg");
   background-size: cover;
 }
 
 .box-2 {
-background-image: url(FASHION.jpg);
+background-image: url("Images/FASHION.jpg");
 background-size: cover;
 }
 
 .box-3 {
-  background-image: url(GROCERY.jpg);
+  background-image: url("Images/GROCERY.jpg");
   background-size: cover;
 }
 
 .box-4 {
-  background-image: url(FURNITURE.jpg);
+  background-image: url("Images/FURNITURE.jpg");
   background-size: cover;
 }
 
 .box-5 {
-  background-image: url(COSMETICS.jpg);
+  background-image: url("Images/COSMETICS.jpg");
   background-size: cover;
 }
 
 .box-6 {
-  background-image: url(HOME\ APPLIANCES.jpg);
+  background-image: url("Images/HOME-APPLIANCES.jpg");
   background-size: cover;
 }
 .shopbox{
