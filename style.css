@@ -1,6 +1,7 @@
 body{
     background-image: url("Images/background.jpg");
-    background-blend-mode: lighten;
+    margin: 0;
+    padding: 0;
 }
 .headsection{
     display: flex;

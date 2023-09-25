@@ -1,6 +1,6 @@
 
 function getpage(){
-    let search = document.querySelector('#searchinput').value; 
+    let search = document.querySelector('.searchsection').value; 
 
     
     alert(search);
