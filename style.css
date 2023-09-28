@@ -3,29 +3,32 @@ body{
     margin: 0;
     padding: 0;
 }
+.logo{
+    
+  height: 90px;
+  width: 90px;
+  margin-left: 48%;
+  margin-right: 32%;
+  
+  
+}
 .headsection{
     display: flex;
     justify-content: space-between;
     height: 100px;
     width: 100%;
-    
-}
-.logo{
-    
-    height: 90px;
-    width: 90px;
-    margin-left: 45%;
-    margin-right: 35%;
+    align-items: center;
     
     
 }
+
 .searchbar{
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
     align-items: center;
-    margin-left: 45%;
+    margin-right: 00px;
 
 }
 .searchsection{
