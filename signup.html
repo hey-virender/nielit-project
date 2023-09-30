@@ -13,38 +13,37 @@
     <header>
         <img alt="BuyKar" class="logo" src="Images/logo.png">
         <div class="headsection">
+            <div class="menubar">
+                <ul>
+                    
+                    <a href="home.html">Home</a>&nbsp; &nbsp;
+                    <a>Orders</a>&nbsp; &nbsp;
+                    <a href="signin.html">Sign in</a>
+                    
+                </ul>
+                
+             </div>
             
             <div class="searchbar">
             <input type="text" class="searchsection" placeholder="BuyKar">
-            <input type="submit" onclick="getpage();">
+            <input type="submit" onclick="getpage();" class="search-btn">
             </div>
             
-                <img alt="cart" src="Images/cart.png">
+                <img alt="cart" class="cart" src="Images/cart.png">
             
         </div>
        
     </header>
-    <div class="menubar">
-        <ul>
-            <a>Home</a>
-            <a>Orders</a>
-        
-        </ul>
-        <div class="signin">
-            <a>Sign in</a>
-            
-
-        </div>
-    </div>
+   
     <div class="sign-up-sec">
         <h3>Welcome to BuyKar. Enter your details to create a account.</h3>
         <div class="sign-up">
             <label>Enter your name &nbsp; <input type="text" placeholder="Name" id="name" class="s-input"></label><br>
-            <label>Enter your email &nbsp; <input type="text" placeholder="Email" id="email" class="s-input"></label><br>
+            <label>Enter your email &nbsp; <input type="email" placeholder="Email" id="email" class="s-input"></label><br>
             <label>Enter your full address &nbsp; <input type="text" placeholder="Address" id="address" class="s-input"> </label><br>
             <label>Enter your pincode &nbsp; <input type="text" placeholder="Pincode" id="pincode" class="s-input"></label><br>
-            <label>Enter your password &nbsp; <input type="text" placeholder="Enter Password" id="password" class="s-input"></label><br>
-            <label>Confirm your password&nbsp; <input type="text" placeholder="Confirm Password" id="c-password" class="s-input"></label><br>
+            <label>Enter your password &nbsp; <input type="password" placeholder="Enter Password" id="password" class="s-input"></label><br>
+            <label>Confirm your password&nbsp; <input type="password" placeholder="Confirm Password" id="c-password" class="s-input"></label><br>
             <input type="submit" placeholder="Sign Up"><br>
             <label>Already have an account. &nbsp;<a href="signin.html">Sign In</a></label>
             
