@@ -3,44 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SignUp</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <img alt="BuyKar" class="logo" src="Images/logo.png">
         <div class="headsection">
-            <div class="menubar">
-                <ul>
-                    <a href="home.html">Home</a>
-                    <a>Orders</a>
-                    <a href="signin.html">Sign in</a>
-                </ul>
-            </div>
+            
             <div class="searchbar">
             <input type="text" class="searchsection" placeholder="BuyKar">
-            <input type="submit" onclick="getpage();" class="search-btn">
+            <input type="submit" onclick="getpage();">
             </div>
-            <div class="cart">
+            
                 <img alt="cart" src="Images/cart.png">
-            </div>
+            
         </div>
        
     </header>
-   
+    <div class="menubar">
+        <ul>
+            <a>Home</a>
+            <a>Orders</a>
+        
+        </ul>
+        <div class="signin">
+            <a>Sign in</a>
+            
+
+        </div>
     </div>
-    <div class="sign-up">
+    <div class="sign-up-sec">
         <h3>Welcome to BuyKar. Enter your details to create a account.</h3>
         <div class="sign-up">
-            <label>Enter your name &nbsp; <input type="text" placeholder="Name" id="name"></label><br>
-            <label>Enter your email &nbsp; <input type="text" placeholder="Email" id="email"></label><br>
-            <label>Enter your full address &nbsp; <input type="text" placeholder="Address" id="address"> </label><br>
-            <label>Enter your pincode &nbsp; <input type="text" placeholder="Pincode" id="pincode"></label><br>
-            <label>Enter your password &nbsp; <input type="text" placeholder="Enter Password" id="password"></label><br>
-            <label>Confirm your password&nbsp; <input type="text" placeholder="Confirm Password" id="c-password"></label><br>
+            <label>Enter your name &nbsp; <input type="text" placeholder="Name" id="name" class="s-input"></label><br>
+            <label>Enter your email &nbsp; <input type="text" placeholder="Email" id="email" class="s-input"></label><br>
+            <label>Enter your full address &nbsp; <input type="text" placeholder="Address" id="address" class="s-input"> </label><br>
+            <label>Enter your pincode &nbsp; <input type="text" placeholder="Pincode" id="pincode" class="s-input"></label><br>
+            <label>Enter your password &nbsp; <input type="text" placeholder="Enter Password" id="password" class="s-input"></label><br>
+            <label>Confirm your password&nbsp; <input type="text" placeholder="Confirm Password" id="c-password" class="s-input"></label><br>
             <input type="submit" placeholder="Sign Up"><br>
             <label>Already have an account. &nbsp;<a href="signin.html">Sign In</a></label>
             
