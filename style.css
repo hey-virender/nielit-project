@@ -1,5 +1,6 @@
 body{
-  background: linear-gradient(90deg,#fce271ea,#c94a74);
+    /**background: linear-gradient(90deg,#fce271ea,#c94a74);**/
+    background: linear-gradient(75deg,#3fffe9,#289c8e);
     margin: 0;
     padding: 0;
     font-family: 'Lobster', cursive;
@@ -14,7 +15,8 @@ h1{
   font-size: xx-large;
 }
 header{
-  background:linear-gradient(50deg,#a5dda5ea,#8cb4d4ee);
+  /**background:linear-gradient(50deg,#ead24a,#8cb4d4ee);**/
+  background: linear-gradient(60deg,#117c6f,rgb(133, 252, 236) );
   margin-bottom: 1%;
 }
 .logo{
@@ -29,7 +31,8 @@ header{
 
 
 .headsection{
-  background: linear-gradient(80deg,#f1d27be0,#e05d89ea);
+    /**background: linear-gradient(80deg,#f1d27be0,#e05d89ea);**/
+    background-color: #8de5db;
     display: flex;
     justify-content: space-between;
     height: 20%;
@@ -49,6 +52,9 @@ header{
   display: flex;
   flex-wrap: nowrap;
   width: 21%;
+}
+.menubar ul a{
+  text-decoration: solid;
 }
 
 .searchbar{
