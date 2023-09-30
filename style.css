@@ -170,3 +170,14 @@ header{
   
 }
 /** shopping pages codding**/
+.prdct-sec{
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.prdct-sec img{
+  width: 25%;
+}
+.prdct-sinfo{
+  margin-left: 6%;
+}
