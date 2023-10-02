@@ -57,7 +57,13 @@ header{
 }
 .menubar ul a{
   color: #545454;
+  font-size: large;
+  transition: 0.2s all ease-in-out;
   
+}
+.menubar ul a:hover{
+  font-size: larger;
+  color: white;
 }
 
 .searchbar{
@@ -86,8 +92,9 @@ header{
 .searchsection:hover{
     border: 0.1px solid black;
     border-radius: 10px;
-    background: linear-gradient(50deg, #ff7878, #ffffff);
-    
+    background-color: #6ff1e450;
+    backdrop-filter: blur 5px;
+    -webkit-backdrop-filter: blur 5px;
 
 }
 .search-btn{
@@ -140,7 +147,6 @@ header{
   height: 100%;
   width:  100%;
   background:transparent;
-  /**border: 2px solid #595a5a;**/
   text-align: center;
   border-radius: 15px;
   transition: 0.5s all ease-in-out;
@@ -170,9 +176,13 @@ header{
   opacity: 1;
   width: 96%;
 }
+footer{
+  margin-top: 3%;
+  background:linear-gradient(70deg,#02d1bc,#00bfac);
+}
 .foot-section{
-  width: 60%;
-  height: 30%;
+  width: 70%;
+  height: 40%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -184,25 +194,36 @@ header{
 }
 .foot-section ul a{
   margin-left: 6%;
+  font-size: large;
+  color: white;
+  transition: 0.3s all ease-in-out;
   
+}
+.foot-section ul a:hover{
+  font-size: larger;
+  color: black;
 }
 /** shopping pages codding**/
 .prdct-sec{
   display: flex;
   margin-bottom: 3%;
+  
 }
 .prdct-sec img{
-  height: 15% ;
+  height: 15%;
   width: 15%;
   transition: 0.4s all ease-in-out;
 }
 .prdct-sec img:hover{
-  height: 16%;
-  width: 17%;
+  height: 15.2%;
+  width: 15.2%;
   background-color: #1ef0db59;
 }
 .prdct-sinfo{
   margin-left: 6%;
+}
+.fridge-pic{
+  max-height: fit-content;
 }
 /**sign in page**/
 .sign-in-sec{
@@ -226,11 +247,19 @@ header{
   border-radius: 15px;
   transition: 0.5s all ease-in-out;
 }
+.sign-in:focus-within{
+  height: 32%;
+  width: 31%;
+  background-color: #ffffff5e;
+  backdrop-filter: blur 5px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.582);
+}
 .sign-in:hover{
   height: 32%;
   width: 31%;
   background-color: #ffffff5e;
   backdrop-filter: blur 5px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.582);
 }
 /** sign up page **/
 .sign-up-sec{
@@ -257,4 +286,14 @@ header{
   background-color: #ffffff5e;
   backdrop-filter: blur 5px;
   
+}
+.sign-up:focus-within{
+  width: 31%;
+  background-color: #ffffff5e;
+  backdrop-filter: blur 5px;
+  
+}
+.about-us{
+  align-items: center;
+  justify-content: center;
 }
