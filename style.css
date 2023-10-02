@@ -1,6 +1,6 @@
 body{
     /**background: linear-gradient(90deg,#fce271ea,#c94a74);**/
-    background:#01fab48e;
+    background:linear-gradient(120deg,white,rgba(25, 241, 223, 0.699));
     margin: 0;
     padding: 0;
     font-family: 'Lobster', cursive;
@@ -16,14 +16,14 @@ h1{
 }
 header{
   /**background:linear-gradient(50deg,#ead24a,#8cb4d4ee);**/
-  background: linear-gradient(160deg,#1eebb7,#0ecbe4);
+  background-color: white;
   margin-bottom: 1%;
 }
 .logo{
     
-  height: 8%;
-  width: 8%;
-  margin-left: 48%;
+  height: %;
+  width: 20%;
+  margin-left: 20%;
   margin-right: 32%;
   
   
