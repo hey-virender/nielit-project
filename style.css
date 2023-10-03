@@ -123,9 +123,7 @@ header{
  color: white;
  margin-right: 2%;
 }
-.cart:hover{
-  border: 2px solid snow;
-}
+
 .info{
   display: flex;
   align-items: center;
@@ -302,4 +300,11 @@ footer{
 .about-us{
   align-items: center;
   justify-content: center;
+}
+/**product page design**/
+.product-details{
+  display: flex;
+  
+  
+
 }
