@@ -1,9 +1,7 @@
 
 function getpage(){
-    let search = document.querySelector('.searchsection').value; 
-        search=search.ToLowerCase();
-    
-    alert(search);
+    let s = document.querySelector('.searchsection').value; 
+    let search=s.toLowerCase();
     if (search=="grocery"){
         
     }
