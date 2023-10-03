@@ -1,23 +1,22 @@
 
 function getpage(){
-    let search = document.querySelector('.searchsection').value; 
-
+    let s = document.querySelector('.searchsection').value; 
+        search=s.ToLowerCase();
     
     alert(search);
     if (search=="grocery"){
-        window.open("grocery.html",self);
         
     }
-    else if(search=="cosmetic"||search=="kajal"||search=="lipstick"||search=="foundation"){
+    else if(search=="cosmetic"){
         window.open("cosmetic.html",self);
     }
-    else if(search=="electronics"||"headphone"||"watch"||"phone"){
+    else if(search=="electronics"){
         window.open("electronics.html",self);
     }
-    else if(search=="furniture"||search=="bed"||search=="sofa"||search=="table"){
+    else if(search=="furniture"){
         window.open("furniture.html",self);
     }
-    else if(search=="home appliances"||"tv"||"washingmachine"||"fridge"){
+    else if(search=="home appliances"){
         window.open("home-appliances.html",self);
     }
     else if(search=="fashion"){
