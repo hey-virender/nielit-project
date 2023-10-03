@@ -4,7 +4,7 @@ function getpage(){
 
     
     alert(search);
-    if (search=="grocery"){
+    if (search=="grocery"||"aata"||"oil"||"grains"){
         window.open("grocery.html",self);
         
     }
