@@ -8,7 +8,7 @@ function getpage(){
         window.open("grocery.html",self);
         
     }
-    else if(search=="cosmetic"||"kajal"||"lipstick"||"foundation"){
+    else if(search=="cosmetic"||search=="kajal"||search=="lipstick"||search=="foundation"){
         window.open("cosmetic.html",self);
     }
     else if(search=="electronics"||"headphone"||"watch"||"phone"){
