@@ -1,6 +1,6 @@
 body{
     /**background: linear-gradient(90deg,#fce271ea,#c94a74);**/
-    background:linear-gradient(180deg,white,rgb(247, 205, 205));
+    background:linear-gradient(180deg,white,rgb(247, 214, 214));
     margin: 0;
     padding: 0;
     font-family: 'Lobster', cursive;
@@ -182,7 +182,7 @@ header{
 }
 footer{
   margin-top: 3%;
-  background:linear-gradient(70deg,rgb(248, 54, 54),rgba(255, 162, 162, 0.856));
+  background:linear-gradient(70deg,rgb(248, 54, 54),#f83737);
 }
 .foot-section{
   width: 70%;
