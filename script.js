@@ -14,7 +14,7 @@ function getpage(){
     else if(search=="electronics"||"headphone"||"watch"||"phone"){
         window.open("electronics.html",self);
     }
-    else if(search=="furniture"||"bed"||"sofa"||"table"){
+    else if(search=="furniture"||search=="bed"||search=="sofa"||search=="table"){
         window.open("furniture.html",self);
     }
     else if(search=="home appliances"||"tv"||"washingmachine"||"fridge"){
