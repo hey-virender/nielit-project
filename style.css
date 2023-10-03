@@ -1,6 +1,6 @@
 body{
     /**background: linear-gradient(90deg,#fce271ea,#c94a74);**/
-    background:linear-gradient(180deg,white,rgb(247, 214, 214));
+    background:linear-gradient(180deg,white,rgb(247, 205, 205));
     margin: 0;
     padding: 0;
     font-family: 'Lobster', cursive;
@@ -182,7 +182,7 @@ header{
 }
 footer{
   margin-top: 3%;
-  background:linear-gradient(70deg,rgb(248, 54, 54),#f83737);
+  background:linear-gradient(70deg,rgb(248, 54, 54),rgba(255, 162, 162, 0.856));
 }
 .foot-section{
   width: 70%;
@@ -308,14 +308,19 @@ footer{
 .product-details img{
   width: 50%;
   margin-bottom: 20%;
+
 }
 .prdct-info{
   height: 100%;
 
+
 }
 .specs{
   margin-top: 10%;
+  
+
 }
 .about-item{
   margin-top: 5%;
+
 }
