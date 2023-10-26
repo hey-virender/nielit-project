@@ -326,3 +326,10 @@ footer{
   margin-top: 5%;
 
 }
+.highlighted{
+  font-weight:bolder;
+  font-size: larger;
+  color:cornflowerblue;
+  text-shadow: 1px 1px 2px rgb(241, 37, 37);
+  
+}
