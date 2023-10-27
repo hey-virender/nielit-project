@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans:opsz,wght@6..12,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
         <img alt="BuyKar" class="logo" src="Images/logo.png">
         <div class="headsection">
             <div class="menubar">
                 <ul>
-                    
+
                     <b>
                         <a href="home.html">Home</a>&nbsp; &nbsp;
-                        <a>Orders</a>&nbsp; &nbsp;
+
                         <a href="signin.html">Sign in</a>
                     </b>
-                    
+
                 </ul>
-                
-             </div>
-            
+
+            </div>
+
             <div class="searchbar">
-            <input type="text" class="searchsection">
-            <button class="search-btn" onclick="getpage();"><i class="fa-solid fa-magnifying-glass fa-beat fa-xl" style="color: #fafafa;"></i></i></button>
+                <input type="text" class="searchsection">
+                <button class="search-btn" onclick="getpage();"><i class="fa-solid fa-magnifying-glass fa-beat fa-xl"
+                        style="color: #fafafa;"></i></i></button>
+            </div>
+
+            <i class="fa-solid fa-cart-shopping fa-bounce fa-xl cart"></i>
+
         </div>
-        
-        <i class="fa-solid fa-cart-shopping fa-bounce fa-xl cart" ></i>
-            
-        </div>
-       
+
     </header>
-   
+
     <div class="sign-up-sec">
         <h3>Welcome to BuyKar. Enter your details to create a account.</h3>
         <div class="sign-up">
-            <label>Enter your name &nbsp; <input type="text" placeholder="Name" id="name" class="s-input"></label><br>
-            <label>Enter your email &nbsp; <input type="email" placeholder="Email" id="email" class="s-input"></label><br>
-            <label>Enter your city &nbsp; <input type="text" placeholder="Address" id="address" class="s-input"> </label><br>
-            <label>Enter your pincode &nbsp; <input type="text" placeholder="Pincode" id="pincode" class="s-input"></label><br>
-            <label>Enter your password &nbsp; <input type="password" placeholder="Enter Password" id="password" class="s-input"></label><br>
-            <label>Confirm your password&nbsp; <input type="password" placeholder="Confirm Password" id="c-password" class="s-input"></label><br>
-            <input type="submit" placeholder="Sign Up"><br>
+            <input type="text" placeholder="Enter Your Name" id="name" class="s-input">
+            <input type="email" placeholder="Enter your email" id="email" class="s-input">
+            <input type="text" placeholder="Enter your city" id="city" class="s-input">
+            <input type="text" placeholder="Enter your pincode" id="pincode" class="s-input">
+            <input type="password" placeholder="Enter your password" id="password" class="s-input">
+            <input type="password" placeholder="Confirm your password" id="c-password" class="s-input">
+            <input type="submit" value="Sign Up">
             <label>Already have an account. &nbsp;<a href="signin.html">Sign In</a></label>
-            
+
         </div>
     </div>
     <footer>
@@ -62,6 +68,7 @@
 
         </div>
     </footer>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
