@@ -81,112 +81,111 @@
 
 
 //new and shorter code for searchbar
-function getpage() {
-    let search = document.querySelector('.searchsection').value.toLowerCase();
-    const pageMappings = {
-        'grocery': 'grocery.html',
-        'groceries': 'grocery.html',
-        'cosmetic': 'cosmetic.html',
-        'cosmetics': 'cosmetic.html',
-        'electronics': 'electronics.html',
-        'electronic': 'electronics.html',
-        'fashion': 'fashion.html',
-        'furniture': 'funriture.html',
-        'home appliances': 'home-appliances.html',
-        'atta': 'products/atta.html',
-        'flour': "products/att.html",
-        'bed': 'products/bed.html',
-        'foundation': 'products/foundation.html',
-        'fridge': 'products/fridge.html',
-        'grains': 'products/grains.html',
-        'headphone': 'products/headphone.html',
-        'kajal': 'products/kajal.html',
-        'kids fashion': 'products/kids-f.html',
-        'lipstick': 'products/lipstick.html',
-        'men fashion': 'products/men-f.html',
-        'oil': 'products/oil.html',
-        'phone': 'products/phone.html',
-        'sofa': 'products/sofa.html',
-        'table': 'products/table.html',
-        'television': 'products/tv.html',
-        'washing machine': 'products/washing-machine.html',
-        'watch': 'products/watch.html',
-
-    };
-
-    if (search in pageMappings) {
-        try {
-            window.open(pageMappings[search], self);
-        } catch {
-            var basedirectory = "products/" + pageMappings[search];
-            window.open(basedirectory, self);
-        }
-
-        finally {
-            var basedirectory = "../" + pageMappings[search];
-            window.open(basedirectory, self);
-
-
+document.addEventListener("DOMContentLoaded", function() {
+    function getpage() {
+        let search = document.querySelector('.searchsection').value.toLowerCase();
+        const pageMappings = {
+            'grocery': 'grocery.html',
+            'groceries': 'grocery.html',
+            'cosmetic': 'cosmetic.html',
+            'cosmetics': 'cosmetic.html',
+            'electronics': 'electronics.html',
+            'electronic': 'electronics.html',
+            'fashion': 'fashion.html',
+            'furniture': 'furniture.html',
+            'home appliances': 'home-appliances.html',
+            'atta': 'atta.html',
+            'flour': "atta.html",
+            'bed': 'bed.html',
+            'foundation': 'foundation.html',
+            'fridge': 'fridge.html',
+            'grains': 'grains.html',
+            'headphone': 'headphone.html',
+            'kajal': 'kajal.html',
+            'kids fashion': 'kids-f.html',
+            'lipstick': 'lipstick.html',
+            'men fashion': 'men-f.html',
+            'oil': 'oil.html',
+            'phone': 'phone.html',
+            'sofa': 'sofa.html',
+            'table': 'table.html',
+            'television': 'tv.html',
+            'washing machine': 'washing-machine.html',
+            'watch': 'watch.html',
+    
         };
+    
+        if (search in pageMappings) {
+            const currentURL = window.location.href;
+            
+            // Extract the base directory from the current URL
+            const currentBaseDirectory = currentURL.substr(0, currentURL.lastIndexOf('/') + 1);
+    
+            // Construct the URL of the target page based on the current base directory
+            const pageURL = currentBaseDirectory + pageMappings[search];
+            window.open(pageURL, self);
+        }
+     else{ 
+            alert("Oops, Invalid search or product not available. More products will be added soon.");
+        }
     }
-    else {
-        alert("Oops, Invalid search or product not available. More products will be added soon.");
-    }
-}
-const searchInput = document.getElementById('searchInput');
-const suggestions = document.getElementById('suggestions');
-
-const suggestionList = [
-    'grocery',
-    'cosmetic',
-    'electronics',
-    'furniture',
-    'fashion',
-    'home appliances',
-    'atta',
-    'grains',
-    'bed',
-    'foundation',
-    'fridge',
-    'headphone',
-    'kajal',
-    'kids fashion',
-    'lipstick',
-    'men fashion',
-    'oil',
-    'phone',
-    'sofa',
-    'table',
-    'tv',
-    'washing machine',
-    'watch',
-    'women fashion',
-
-
-];
-
-// Listen for user input in the search bar
-searchInput.addEventListener('input', function () {
-    const search = searchInput.value.toLowerCase();
-    suggestions.innerHTML = ''; // Clear previous suggestions
-
-    if (search.length === 0) {
-        return; // If the search input is empty, don't display suggestions.
-    }
-
-    const matchingSuggestions = suggestionList.filter(term => term.includes(search));
-    if (matchingSuggestions.length > 0) {
-        matchingSuggestions.forEach(term => {
-            const suggestionItem = document.createElement('div');
-            suggestionItem.textContent = term;
-            suggestionItem.addEventListener('click', () => {
-                // When a suggestion is clicked, populate the search input with the suggestion.
-                searchInput.value = term;
-                suggestions.innerHTML = ''; // Clear suggestions.
+    const searchInput = document.getElementById('searchInput');
+    const suggestions = document.getElementById('suggestions');
+    
+    const suggestionList = [
+        'grocery',
+        'cosmetic',
+        'electronics',
+        'furniture',
+        'fashion',
+        'home appliances',
+        'atta',
+        'grains',
+        'bed',
+        'foundation',
+        'fridge',
+        'headphone',
+        'kajal',
+        'kids fashion',
+        'lipstick',
+        'men fashion',
+        'oil',
+        'phone',
+        'sofa',
+        'table',
+        'telvision',
+        'washing machine',
+        'watch',
+        'women fashion',
+    
+    
+    ];
+    
+    // Listen for user input in the search bar
+    searchInput.addEventListener('input', function () {
+        const search = searchInput.value.toLowerCase();
+        suggestions.innerHTML = ''; // Clear previous suggestions
+    
+        if (search.length === 0) {
+            return; // If the search input is empty, don't display suggestions.
+        }
+    
+        const matchingSuggestions = suggestionList.filter(term => term.includes(search));
+        if (matchingSuggestions.length > 0) {
+            matchingSuggestions.forEach(term => {
+                const suggestionItem = document.createElement('div');
+                suggestionItem.textContent = term;
+                suggestionItem.addEventListener('click', () => {
+                    // When a suggestion is clicked, populate the search input with the suggestion.
+                    searchInput.value = term;
+                    suggestions.innerHTML = ''; // Clear suggestions.
+                });
+                suggestions.appendChild(suggestionItem);
             });
-            suggestions.appendChild(suggestionItem);
-        });
-    }
+        }
+    });
+    
+    
 });
 
 
