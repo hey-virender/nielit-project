@@ -25,10 +25,14 @@
                 </ul>
             </div>
             
-            <div class="searchbar">
-            <input type="text" class="searchsection">
-            <button class="search-btn" onclick="getpage();"><i class="fa-solid fa-magnifying-glass fa-beat fa-xl" style="color: #fafafa;"></i></i></button>
-        </div>
+               <form class="searchbar" method="post" onsubmit="getpage();">
+            
+                    <input type="text" class="searchsection">
+                    <button type="submit" class="search-btn">
+                        <div id="suggestions"></div>
+                    <i class="fa-solid fa-magnifying-glass fa-beat fa-xl" style="color: #fafafa;"></i>
+                </button>
+                </form>        
         
         <i class="fa-solid fa-cart-shopping fa-bounce fa-xl cart" ></i>
            

@@ -440,3 +440,20 @@ footer {
   text-shadow: 1px 1px 2px rgb(241, 37, 37);
 
 }
+#suggestions {
+  position: absolute;
+  width: 24%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  left: 47%;
+  top: 80%;
+}
+
+#suggestions div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#suggestions div:hover {
+  background-color: #f0f0f0;
+}
