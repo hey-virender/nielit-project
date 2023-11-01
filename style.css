@@ -117,7 +117,8 @@ header {
   outline: none;
 
 }
-.searchsection::placeholder{
+
+.searchsection::placeholder {
   color: white;
   size: 2em;
   font-family: 'Nunito Sans', sans-serif;
@@ -299,7 +300,7 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   width: 15%;
-  margin:auto;
+  margin: auto;
   border: 2px solid rgb(241, 22, 22);
   border-radius: 15px;
   transition: 0.5s all ease-in-out;
@@ -308,7 +309,7 @@ footer {
 
 }
 
-.sign-in input{
+.sign-in input {
   background: transparent;
   outline: none;
   border: solid rgb(245, 17, 17);
@@ -317,17 +318,18 @@ footer {
   max-height: 10%;
   max-width: 80%;
   width: auto;
-  color: black; 
+  color: black;
   text-align: center;
   font-weight: 600;
   margin-bottom: 6%;
 
 }
-.sign-in input::placeholder{
-  color: black; 
+
+.sign-in input::placeholder {
+  color: black;
   text-align: center;
   font-weight: 450;
-  
+
 }
 
 
@@ -371,7 +373,7 @@ footer {
 
 }
 
-.sign-up input{
+.sign-up input {
   background: transparent;
   outline: none;
   border: solid rgb(245, 17, 17);
@@ -380,17 +382,18 @@ footer {
   max-height: 10%;
   max-width: 80%;
   width: auto;
-  color: black; 
+  color: black;
   text-align: center;
   font-weight: 600;
   margin-bottom: 6%;
 
 }
-.sign-up input::placeholder{
-  color: black; 
+
+.sign-up input::placeholder {
+  color: black;
   text-align: center;
   font-weight: 450;
-  
+
 }
 
 .sign-up:hover {
@@ -445,12 +448,13 @@ footer {
   text-shadow: 1px 1px 2px rgb(241, 37, 37);
 
 }
+
 #suggestions {
   position: absolute;
   display: none;
   width: 24%;
-  background:rgb(243, 54, 54);
-  color:white;
+  background: rgb(243, 54, 54);
+  color: white;
   font-size: 1.1rem;
   border: 1px solid #ccc;
   left: 47%;
@@ -463,6 +467,6 @@ footer {
 }
 
 #suggestions div:hover {
-  background-color:rgb(221, 77, 77);
+  background-color: rgb(221, 77, 77);
   color: black;
 }

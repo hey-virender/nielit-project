@@ -109,7 +109,7 @@ function getpage() {
         'television': 'products/tv.html',
         'washing machine': 'products/washing-machine.html',
         'watch': 'products/watch.html',
-        'women fashion':'products/women-f.html'
+        'women fashion': 'products/women-f.html'
     };
 
     if (search in pageMappings) {
@@ -118,69 +118,69 @@ function getpage() {
     } else {
         alert("Oops, Invalid search or product not available. More products will be added soon.");
     }
-} 
-    
-    const searchInput = document.getElementById('searchInput');
-    const suggestions = document.getElementById('suggestions');
-    
-    const suggestionList = [
-        'grocery',
-        'cosmetic',
-        'electronic',
-        'furniture',
-        'fashion',
-        'home appliance',
-        'atta',
-        'grains',
-        'bed',
-        'foundation',
-        'fridge',
-        'headphone',
-        'kajal',
-        'kids fashion',
-        'lipstick',
-        'men fashion',
-        'oil',
-        'phone',
-        'sofa',
-        'table',
-        'telvision',
-        'washing machine',
-        'watch',
-        'women fashion',
-    
-    
-    ];
-    
-    // Listen for user input in the search bar and show suggestions
-    searchInput.addEventListener('input', function () {
-        const search = searchInput.value.toLowerCase();
-        const matchingSuggestions = suggestionList.filter(term => term.includes(search));
-        
-        // Clear suggestions before displaying new ones
-        suggestions.innerHTML = '';
-    
-        if (search.length === 0) {
-            suggestions.style.display = 'none';
-        } else if (matchingSuggestions.length > 0) {
-            suggestions.style.display = 'block';
-            matchingSuggestions.forEach(term => {
-                const suggestionItem = document.createElement('div');
-                suggestionItem.textContent = term;
-                suggestionItem.addEventListener('click', function () {
-                    searchInput.value = term;
-                    suggestions.innerHTML = '';
-                    suggestions.style.display = 'none'; // Hide suggestions after selection
-                });
-                suggestions.appendChild(suggestionItem);
+}
+
+const searchInput = document.getElementById('searchInput');
+const suggestions = document.getElementById('suggestions');
+
+const suggestionList = [
+    'grocery',
+    'cosmetic',
+    'electronic',
+    'furniture',
+    'fashion',
+    'home appliance',
+    'atta',
+    'grains',
+    'bed',
+    'foundation',
+    'fridge',
+    'headphone',
+    'kajal',
+    'kids fashion',
+    'lipstick',
+    'men fashion',
+    'oil',
+    'phone',
+    'sofa',
+    'table',
+    'telvision',
+    'washing machine',
+    'watch',
+    'women fashion',
+
+
+];
+
+// Listen for user input in the search bar and show suggestions
+searchInput.addEventListener('input', function () {
+    const search = searchInput.value.toLowerCase();
+    const matchingSuggestions = suggestionList.filter(term => term.includes(search));
+
+    // Clear suggestions before displaying new ones
+    suggestions.innerHTML = '';
+
+    if (search.length === 0) {
+        suggestions.style.display = 'none';
+    } else if (matchingSuggestions.length > 0) {
+        suggestions.style.display = 'block';
+        matchingSuggestions.forEach(term => {
+            const suggestionItem = document.createElement('div');
+            suggestionItem.textContent = term;
+            suggestionItem.addEventListener('click', function () {
+                searchInput.value = term;
+                suggestions.innerHTML = '';
+                suggestions.style.display = 'none'; // Hide suggestions after selection
             });
-        } else {
-            suggestions.style.display = 'none'; // Hide suggestions if there are no matches
-        }
-    });
-    
-    
-    
+            suggestions.appendChild(suggestionItem);
+        });
+    } else {
+        suggestions.style.display = 'none'; // Hide suggestions if there are no matches
+    }
+});
+
+
+
 
 
 
