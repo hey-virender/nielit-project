@@ -81,64 +81,55 @@
 
 
 //new and shorter code for searchbar
-document.addEventListener("DOMContentLoaded", function() {
-    function getpage() {
-        let search = document.querySelector('.searchsection').value.toLowerCase();
-        const pageMappings = {
-            'grocery': 'grocery.html',
-            'groceries': 'grocery.html',
-            'cosmetic': 'cosmetic.html',
-            'cosmetics': 'cosmetic.html',
-            'electronics': 'electronics.html',
-            'electronic': 'electronics.html',
-            'fashion': 'fashion.html',
-            'furniture': 'furniture.html',
-            'home appliances': 'home-appliances.html',
-            'atta': 'atta.html',
-            'flour': "atta.html",
-            'bed': 'bed.html',
-            'foundation': 'foundation.html',
-            'fridge': 'fridge.html',
-            'grains': 'grains.html',
-            'headphone': 'headphone.html',
-            'kajal': 'kajal.html',
-            'kids fashion': 'kids-f.html',
-            'lipstick': 'lipstick.html',
-            'men fashion': 'men-f.html',
-            'oil': 'oil.html',
-            'phone': 'phone.html',
-            'sofa': 'sofa.html',
-            'table': 'table.html',
-            'television': 'tv.html',
-            'washing machine': 'washing-machine.html',
-            'watch': 'watch.html',
-    
-        };
-    
-        if (search in pageMappings) {
-            const currentURL = window.location.href;
-            
-            // Extract the base directory from the current URL
-            const currentBaseDirectory = currentURL.substr(0, currentURL.lastIndexOf('/') + 1);
-    
-            // Construct the URL of the target page based on the current base directory
-            const pageURL = currentBaseDirectory + pageMappings[search];
-            window.open(pageURL, self);
-        }
-     else{ 
-            alert("Oops, Invalid search or product not available. More products will be added soon.");
-        }
+
+searchButton.addEventListener('click', getpage);
+function getpage() {
+    const search = document.getElementById('searchInput').value.toLowerCase();
+    const pageMappings = {
+        'grocery': 'grocery.html',
+        'cosmetic': 'cosmetic.html',
+        'electronic': 'electronics.html',
+        'furniture': 'furniture.html',
+        'fashion': 'fashion.html',
+        'home appliance': 'home-appliances.html',
+        'atta': 'products/atta.html',
+        'grains': 'products/grains.html',
+        'bed': 'products/bed.html',
+        'foundation': 'products/foundation.html',
+        'fridge': 'products/fridge.html',
+        'headphone': 'products/headphone.html',
+        'kajal': 'products/kajal.html',
+        'kids fashion': 'products/kids-f.html',
+        'lipstick': 'products/lipstick.html',
+        'men fashion': 'products/men-f.html',
+        'oil': 'products/oil.html',
+        'phone': 'products/phone.html',
+        'sofa': 'products/sofa.html',
+        'table': 'products/table.html',
+        'television': 'products/tv.html',
+        'washing machine': 'products/washing-machine.html',
+        'watch': 'products/watch.html',
+        'women fashion':'products/women-f.html'
+    };
+
+    if (search in pageMappings) {
+        const url = pageMappings[search];
+        window.open(url, '_self'); // Open in the same window
+    } else {
+        alert("Oops, Invalid search or product not available. More products will be added soon.");
     }
+} 
+    
     const searchInput = document.getElementById('searchInput');
     const suggestions = document.getElementById('suggestions');
     
     const suggestionList = [
         'grocery',
         'cosmetic',
-        'electronics',
+        'electronic',
         'furniture',
         'fashion',
-        'home appliances',
+        'home appliance',
         'atta',
         'grains',
         'bed',
@@ -161,32 +152,36 @@ document.addEventListener("DOMContentLoaded", function() {
     
     ];
     
-    // Listen for user input in the search bar
+    // Listen for user input in the search bar and show suggestions
     searchInput.addEventListener('input', function () {
         const search = searchInput.value.toLowerCase();
-        suggestions.innerHTML = ''; // Clear previous suggestions
+        const matchingSuggestions = suggestionList.filter(term => term.includes(search));
+        
+        // Clear suggestions before displaying new ones
+        suggestions.innerHTML = '';
     
         if (search.length === 0) {
-            return; // If the search input is empty, don't display suggestions.
-        }
-    
-        const matchingSuggestions = suggestionList.filter(term => term.includes(search));
-        if (matchingSuggestions.length > 0) {
+            suggestions.style.display = 'none';
+        } else if (matchingSuggestions.length > 0) {
+            suggestions.style.display = 'block';
             matchingSuggestions.forEach(term => {
                 const suggestionItem = document.createElement('div');
                 suggestionItem.textContent = term;
-                suggestionItem.addEventListener('click', () => {
-                    // When a suggestion is clicked, populate the search input with the suggestion.
+                suggestionItem.addEventListener('click', function () {
                     searchInput.value = term;
-                    suggestions.innerHTML = ''; // Clear suggestions.
+                    suggestions.innerHTML = '';
+                    suggestions.style.display = 'none'; // Hide suggestions after selection
                 });
                 suggestions.appendChild(suggestionItem);
             });
+        } else {
+            suggestions.style.display = 'none'; // Hide suggestions if there are no matches
         }
     });
     
     
-});
+    
+
 
 
 // }
