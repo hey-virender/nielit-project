@@ -5,7 +5,7 @@
 
 body {
   /**background: linear-gradient(90deg,#fce271ea,#c94a74);**/
-  background: linear-gradient(180deg, white, rgb(247, 205, 205));
+  background: white;
   margin: 0;
   padding: 0;
   font-family: 'Nunito Sans', sans-serif;
@@ -83,6 +83,7 @@ header {
 .menubar {
   display: flex;
   flex-wrap: nowrap;
+  white-space: nowrap;
   min-width: 25%;
   text-align: justify;
 
@@ -102,7 +103,7 @@ header {
 }
 
 .menubar ul a:hover {
-  font-size: larger;
+  font-size: 1.1rem;
   color: black;
 }
 
@@ -141,7 +142,6 @@ header {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: bolder;
   text-align: center;
-  
 }
 
 .searchsection:hover {
@@ -496,55 +496,497 @@ footer {
   color: black;
 }
 
-@media (max-width : 600px){
-  #cusror{
-    visibility: hidden;
-  }
-.headsection{
-  width: 77vw;
-}
-
-  .shopsection{
-    flex-direction: column;
-    flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    width: 100vw;
 
 
-  }
-  .shopbox a{
-    display: flex;
-    width: 100%;
-    height: 100%;
+
+
+
+  
+@media  (orientation: portrait ) {
+
+  * {
     margin: 0;
     padding: 0;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  .shopbox{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    
-  }
-  .shopbox h1{
-    font-size: 1.1rem;
-  }
-  .shopbox img{
-  width: 100%;
-  margin: 0;
-  padding: 0;
-
-  }
-  .foot-section{
-    width: 100%;
-    height: 100%;
   }
   
+  body {
+    /**background: linear-gradient(90deg,#fce271ea,#c94a74);**/
+    background: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  h1 {
+    color: black;
+    font-size: 1rem;
+  }
+  
+  header {
+    background-color: white;
+    margin-bottom: 0.5%;
+    display: flex;
+    height: 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    position: -webkit-sticky;
+  }
+  
+  .logo {
+
+    width: 100%;
+    height: auto;
+    width: 13%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  
+  .headsection {
+    /**background: linear-gradient(80deg,#f1d27be0,#e05d89ea);**/
+    background: linear-gradient(70deg, rgb(248, 54, 54), #f94747);
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    width: 82%;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 15px;
+    transition: 0.1s all ease-in-out;
+    padding: 1%;
+  }
+  
+  .headsection:hover {
+    border-top: 0.08px solid #aeaeaf;
+  }
+  
+  .menubar {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: wrap;
+    min-width: 23%;
+    text-align: center;
+    }
+  
+  .menubar ul a {
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.2s all ease-in-out;
+    text-align: left;
+    white-space: nowrap;
+    
+  
+  
+  }
+  
+  .menubar ul a:hover {
+    font-size: 1.1rem;
+    color: black;
+  }
+  
+  .searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    height: 100%;
+    width:70%;
+    height: 2.6rem;
+  
+  
+  }
+  
+  .searchsection {
+    height: 90%;
+    width: 80%;
+    margin-left: 0;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    border-radius: 7px;
+    transition: 200ms all ease-in-out;
+    padding: 0%;
+    outline: none;
+    margin-right: 3%;
+  
+  }
+  
+  .searchsection::placeholder {
+    color: white;
+    size: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+  }
+  
+  .searchsection:hover {
+    border: 2px double whitesmoke;
+    border-radius: 10px;
+    background-color: #f32e2ec9;
+    backdrop-filter: blur 5px;
+    -webkit-backdrop-filter: blur 2px;
+    outline: none;
+  
+  }
+  
+  .searchsection:focus {
+    border: 2px double whitesmoke;
+    border-radius: 10px;
+    background-color: #f10b0bc9;
+    backdrop-filter: blur 5px;
+    -webkit-backdrop-filter: blur 2px;
+    outline: none;
+  
+  }
+  
+  .search-btn {
+    height: 150%;
+    width: 7%;
+    background: transparent;
+    border: 2px white;
+  }
+  
+  
+  .cart {
+    color: white;
+    margin-right: 2%;
+  }
+  
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+  }
+  
+  
+  /** shop section coding**/
+  .shopsection {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  
+  
+  
+  }
+  
+  .shopsection a {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .shopbox {
+  
+    height: 100%;
+    width: 80%;
+    background: transparent;
+    text-align: center;
+    border-radius: 15px;
+    transition: 100ms all ease-in-out;
+    font-size: 100%;
+    border: 2px solid #ff3434;
+    margin-bottom: 2%;
+    align-content: center;
+  
+  
+  
+  }
+  
+  .shopbox:hover {
+    border-radius: 15px;
+    border: 2px solid #ff3434;
+    box-shadow: 6px 6px 5px rgb(231, 230, 230);
+    -webkit-backdrop-filter: blur 5px;
+    backdrop-filter: blur 5px;
+    background-color: rgba(243, 250, 249, 0.616);
+  
+  }
+  
+  .shopbox img {
+    max-height: auto;
+    max-width: 60%;
+    opacity: 0.9;
+    border-radius: 15px;
+    transition: 200ms all ease-in-out;
+  
+  }
+  
+ 
+  
+  footer {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    margin-top: 2%;
+    height: 6%;
+    background: linear-gradient(70deg, rgb(248, 54, 54), rgba(255, 162, 162, 0.856));
+    white-space: nowrap;
+  }
+  
+  .foot-section {
+    width: 70%;
+    height: 40%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  
+  .foot-section ul {
+    width: 100%;
+  }
+  
+  .foot-section ul a {
+    margin-left: 6%;
+    font-size: large;
+    color: white;
+    transition: 0.3s all ease-in-out;
+  
+  }
+  
+  .foot-section ul a:hover {
+    font-size: larger;
+    color: black;
+  }
+  
+  /** shopping pages codding**/
+  .prdct-sec {
+    display: flex;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    white-space: wrap;
+  
+  }
+  .prdct-sec h2{
+    font-size: 1.1rem;
+
+  }
+  
+  .prdct-sec img {
+    height: 35%;
+    width: 35%;
+    transition: 0.4s all ease-in-out;
+    padding: 0;
+  }
+  
+  .prdct-sec img:hover {
+    height: 15.2%;
+    width: 15.2%;
+    background-color: #1ef0db59;
+  }
+  
+  .prdct-sinfo {
+    margin-left: 6%;
+  }
+  
+  .fridge-pic {
+    max-height: fit-content;
+  }
+  
+  /**sign in page**/
+  .sign-in-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  
+  }
+  
+  .sign-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    border: 2px solid rgb(241, 22, 22);
+    border-radius: 15px;
+    transition: 0.5s all ease-in-out;
+    padding: 3%;
+    text-align: center;
+  
+  }
+  
+  .sign-in input {
+    background: transparent;
+    outline: none;
+    border: solid rgb(245, 17, 17);
+    border-radius: 15rem;
+    padding: 3%;
+    max-height: 10%;
+    max-width: 80%;
+    width: auto;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 6%;
+  
+  }
+  
+  .sign-in input::placeholder {
+    color: black;
+    text-align: center;
+    font-weight: 450;
+  
+  }
+  
+  
+  .sign-in:focus-within {
+    height: 32%;
+    width: 16%;
+    background-color: #ffffff5e;
+    backdrop-filter: blur 5px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.582);
+  }
+  
+  .sign-in:hover {
+    height: 32%;
+    width: 16%;
+    background-color: #ffffff5e;
+    backdrop-filter: blur 5px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.582);
+  }
+  
+  /** sign up page **/
+  .sign-up-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    border: 2px solid rgb(245, 27, 27);
+    border-radius: 15px;
+    transition: 0.5s all ease-in-out;
+    padding: 3%;
+    text-align: center;
+  
+  }
+  
+  .sign-up input {
+    background: transparent;
+    outline: none;
+    border: solid rgb(245, 17, 17);
+    border-radius: 15rem;
+    padding: 3%;
+    max-height: 10%;
+    max-width: 80%;
+    width: auto;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 6%;
+  
+  }
+  
+  .sign-up input::placeholder {
+    color: black;
+    text-align: center;
+    font-weight: 450;
+  
+  }
+  
+  .sign-up:hover {
+    width: 80%;
+    background-color: #ffffff5e;
+    backdrop-filter: blur 5px;
+  
+  }
+  
+  .sign-up:focus-within {
+    width: 80%;
+    background-color: #ffffff5e;
+    backdrop-filter: blur 5px;
+  
+  }
+  
+  .about-us {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /**product page design**/
+  .product-details {
+    display: flex;
+  }
+  
+  .product-details img {
+    min-width: 50%;
+    min-height: 100%;
+    margin-bottom: 20%;
+  
+  }
+  
+  .prdct-info {
+    height: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 5%;
+  }
+  
+  .specs {
+    margin-top: 10%;
+  }
+  
+  .about-item {
+    margin-top: 5%;
+  }
+  
+  .highlighted {
+    font-weight: bolder;
+    font-size: larger;
+    color:darkolivegreen;
+    text-shadow: 1px 1px 2px rgb(241, 37, 37);
+  
+  }
+  
+  #suggestions {
+    position: absolute;
+    display: none;
+    width: 24%;
+    background: rgb(243, 54, 54);
+    color: white;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    left: 47%;
+    top: 80%;
+  }
+  
+  #suggestions div {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #suggestions div:hover {
+    background-color: rgb(221, 77, 77);
+    color: black;
+  }
 }
