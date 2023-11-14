@@ -25,7 +25,8 @@ h1 {
   color: black;
   font-size: xx-large;
 }
-#cursor{
+
+#cursor {
   height: 60px;
   width: 60px;
   background-color: red;
@@ -33,7 +34,7 @@ h1 {
   position: fixed;
   z-index: -1;
   opacity: 0.6;
-  
+
 }
 
 header {
@@ -191,11 +192,12 @@ header {
 .shopsection {
   display: flex;
   flex-wrap: wrap;
-z-index: 1;
+  z-index: 1;
 
 
 }
-.shopsection h1{
+
+.shopsection h1 {
   font-size: 1.5rem;
 }
 
@@ -236,14 +238,14 @@ z-index: 1;
   opacity: 0.9;
   border-radius: 15px;
   transition: 700ms all ease-in-out;
-  
+
 
 }
 
 .shopbox:hover img {
   opacity: 1;
   max-width: 96%;
-  transform: rotate3d(1,3,1,5deg);
+  transform: rotate3d(1, 3, 1, 5deg);
 }
 
 footer {
@@ -252,7 +254,7 @@ footer {
   padding: 2%;
   margin-top: 2%;
   height: 6%;
-  background: linear-gradient(70deg, rgb(248, 54, 54), rgba(255, 162, 162, 0.856));
+  background-color: rgb(248, 54, 54);
 }
 
 .foot-section {
@@ -324,7 +326,7 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 15%;
+  width: 40%;
   margin: auto;
   border: 2px solid rgb(241, 22, 22);
   border-radius: 15px;
@@ -348,6 +350,7 @@ footer {
   font-weight: 600;
   margin-bottom: 6%;
 
+
 }
 
 .sign-in input::placeholder {
@@ -357,10 +360,17 @@ footer {
 
 }
 
+#button {
+  background-color: red;
+  color: white;
+  border: 2px solid white;
+  box-shadow: 8px 3px 16px 8px #e67171;
+  border-radius: 10px;
+}
 
 .sign-in:focus-within {
   height: 32%;
-  width: 16%;
+  width: 45%;
   background-color: #ffffff5e;
   backdrop-filter: blur 5px;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.582);
@@ -368,7 +378,7 @@ footer {
 
 .sign-in:hover {
   height: 32%;
-  width: 16%;
+  width: 45%;
   background-color: #ffffff5e;
   backdrop-filter: blur 5px;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.582);
@@ -388,7 +398,7 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 15%;
+  width: 40%;
   margin: auto;
   border: 2px solid rgb(245, 27, 27);
   border-radius: 15px;
@@ -422,14 +432,14 @@ footer {
 }
 
 .sign-up:hover {
-  width: 16%;
+  width: 45%;
   background-color: #ffffff5e;
   backdrop-filter: blur 5px;
 
 }
 
 .sign-up:focus-within {
-  width: 16%;
+  width: 45%;
   background-color: #ffffff5e;
   backdrop-filter: blur 5px;
 
@@ -501,14 +511,14 @@ footer {
 
 
 
-  
-@media  (orientation: portrait ) {
+
+@media (orientation: portrait) {
 
   * {
     margin: 0;
     padding: 0;
   }
-  
+
   body {
     /**background: linear-gradient(90deg,#fce271ea,#c94a74);**/
     background: white;
@@ -516,21 +526,21 @@ footer {
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
   }
-  
+
   a {
     text-decoration: none;
-  
+
   }
-  
+
   a:visited {
     text-decoration: none;
   }
-  
+
   h1 {
     color: black;
     font-size: 1rem;
   }
-  
+
   header {
     background-color: white;
     margin-bottom: 0.5%;
@@ -541,7 +551,7 @@ footer {
     z-index: 1;
     position: -webkit-sticky;
   }
-  
+
   .logo {
 
     width: 100%;
@@ -552,8 +562,8 @@ footer {
     margin-bottom: 0;
     margin-top: 0;
   }
-  
-  
+
+
   .headsection {
     /**background: linear-gradient(80deg,#f1d27be0,#e05d89ea);**/
     background: linear-gradient(70deg, rgb(248, 54, 54), #f94747);
@@ -568,47 +578,47 @@ footer {
     transition: 0.1s all ease-in-out;
     padding: 1%;
   }
-  
+
   .headsection:hover {
     border-top: 0.08px solid #aeaeaf;
   }
-  
+
   .menubar {
     display: flex;
     flex-wrap: nowrap;
     white-space: wrap;
     min-width: 23%;
     text-align: center;
-    }
-  
+  }
+
   .menubar ul a {
     color: white;
     font-size: 1.2rem;
     transition: 0.2s all ease-in-out;
     text-align: left;
     white-space: nowrap;
-    
-  
-  
+
+
+
   }
-  
+
   .menubar ul a:hover {
     font-size: 1.1rem;
     color: black;
   }
-  
+
   .searchbar {
     display: flex;
     justify-content: center;
     align-items: center;
     align-items: center;
     height: 100%;
-    width:70%;
+    width: 70%;
     height: 2.6rem;
-  
-  
+
+
   }
-  
+
   .searchsection {
     height: 90%;
     width: 80%;
@@ -620,9 +630,9 @@ footer {
     padding: 0%;
     outline: none;
     margin-right: 3%;
-  
+
   }
-  
+
   .searchsection::placeholder {
     color: white;
     size: 1rem;
@@ -630,7 +640,7 @@ footer {
     font-weight: bolder;
     text-align: center;
   }
-  
+
   .searchsection:hover {
     border: 2px double whitesmoke;
     border-radius: 10px;
@@ -638,9 +648,9 @@ footer {
     backdrop-filter: blur 5px;
     -webkit-backdrop-filter: blur 2px;
     outline: none;
-  
+
   }
-  
+
   .searchsection:focus {
     border: 2px double whitesmoke;
     border-radius: 10px;
@@ -648,50 +658,50 @@ footer {
     backdrop-filter: blur 5px;
     -webkit-backdrop-filter: blur 2px;
     outline: none;
-  
+
   }
-  
+
   .search-btn {
     height: 150%;
     width: 7%;
     background: transparent;
     border: 2px white;
   }
-  
-  
+
+
   .cart {
     color: white;
     margin-right: 2%;
   }
-  
+
   .info {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-  
+
   }
-  
-  
+
+
   /** shop section coding**/
   .shopsection {
     display: flex;
     flex-direction: column;
     align-content: center;
-  
-  
-  
+
+
+
   }
-  
+
   .shopsection a {
     height: 70%;
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  
+
   .shopbox {
-  
+
     height: 100%;
     width: 80%;
     background: transparent;
@@ -702,11 +712,11 @@ footer {
     border: 2px solid #ff3434;
     margin-bottom: 2%;
     align-content: center;
-  
-  
-  
+
+
+
   }
-  
+
   .shopbox:hover {
     border-radius: 15px;
     border: 2px solid #ff3434;
@@ -714,30 +724,35 @@ footer {
     -webkit-backdrop-filter: blur 5px;
     backdrop-filter: blur 5px;
     background-color: rgba(243, 250, 249, 0.616);
-  
+
   }
-  
+
   .shopbox img {
     max-height: auto;
     max-width: 60%;
     opacity: 0.9;
     border-radius: 15px;
     transition: 200ms all ease-in-out;
-  
+
   }
-  
- 
-  
+
+  .shopbox:hover img {
+    opacity: 1;
+    max-width: 60%;
+    transform: rotate3d(5, 3, 0, 5deg);
+  }
+
+
   footer {
     display: flex;
     align-items: center;
     padding: 2%;
     margin-top: 2%;
     height: 6%;
-    background: linear-gradient(70deg, rgb(248, 54, 54), rgba(255, 162, 162, 0.856));
+    background-color: rgb(248, 54, 54);
     white-space: nowrap;
   }
-  
+
   .foot-section {
     width: 70%;
     height: 40%;
@@ -745,26 +760,26 @@ footer {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-  
+
   }
-  
+
   .foot-section ul {
     width: 100%;
   }
-  
+
   .foot-section ul a {
     margin-left: 6%;
     font-size: large;
     color: white;
     transition: 0.3s all ease-in-out;
-  
+
   }
-  
+
   .foot-section ul a:hover {
     font-size: larger;
     color: black;
   }
-  
+
   /** shopping pages codding**/
   .prdct-sec {
     display: flex;
@@ -773,44 +788,48 @@ footer {
     align-items: center;
     text-align: left;
     white-space: wrap;
-  
+
   }
-  .prdct-sec h2{
+
+  .prdct-sec h2 {
     font-size: 1.1rem;
 
   }
-  
+
   .prdct-sec img {
+    display: block;
+    top: 10%;
     height: 35%;
     width: 35%;
     transition: 0.4s all ease-in-out;
     padding: 0;
   }
-  
+
   .prdct-sec img:hover {
-    height: 15.2%;
-    width: 15.2%;
-    background-color: #1ef0db59;
+    height: 35%;
+    width: 35%;
+    background-color: #f01e1e59;
   }
-  
+
   .prdct-sinfo {
+    display: block;
     margin-left: 6%;
   }
-  
+
   .fridge-pic {
     max-height: fit-content;
   }
-  
+
   /**sign in page**/
   .sign-in-sec {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
-  
+
+
   }
-  
+
   .sign-in {
     display: flex;
     flex-direction: column;
@@ -824,9 +843,9 @@ footer {
     transition: 0.5s all ease-in-out;
     padding: 3%;
     text-align: center;
-  
+
   }
-  
+
   .sign-in input {
     background: transparent;
     outline: none;
@@ -840,42 +859,42 @@ footer {
     text-align: center;
     font-weight: 600;
     margin-bottom: 6%;
-  
+
   }
-  
+
   .sign-in input::placeholder {
     color: black;
     text-align: center;
     font-weight: 450;
-  
+
   }
-  
-  
+
+
   .sign-in:focus-within {
     height: 32%;
-    width: 16%;
+    width: 80%;
     background-color: #ffffff5e;
     backdrop-filter: blur 5px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.582);
   }
-  
+
   .sign-in:hover {
     height: 32%;
-    width: 16%;
+    width: 80%;
     background-color: #ffffff5e;
     backdrop-filter: blur 5px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.582);
   }
-  
+
   /** sign up page **/
   .sign-up-sec {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+
   }
-  
+
   .sign-up {
     display: flex;
     flex-direction: column;
@@ -888,9 +907,17 @@ footer {
     transition: 0.5s all ease-in-out;
     padding: 3%;
     text-align: center;
-  
+
   }
-  
+
+  #button {
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 8px 3px 16px 8px #e67171;
+    border-radius: 10px;
+  }
+
   .sign-up input {
     background: transparent;
     outline: none;
@@ -904,70 +931,76 @@ footer {
     text-align: center;
     font-weight: 600;
     margin-bottom: 6%;
-  
+
   }
-  
+
   .sign-up input::placeholder {
     color: black;
     text-align: center;
     font-weight: 450;
-  
+
   }
-  
+
   .sign-up:hover {
     width: 80%;
     background-color: #ffffff5e;
     backdrop-filter: blur 5px;
-  
+
   }
-  
+
   .sign-up:focus-within {
     width: 80%;
     background-color: #ffffff5e;
     backdrop-filter: blur 5px;
-  
+
   }
-  
+
   .about-us {
     align-items: center;
     justify-content: center;
   }
-  
+
   /**product page design**/
   .product-details {
     display: flex;
+    flex-direction: column;
   }
-  
+
   .product-details img {
-    min-width: 50%;
-    min-height: 100%;
-    margin-bottom: 20%;
-  
+    height: 30%;
+    width: 100%;
+
+
   }
-  
+
   .prdct-info {
     height: 100%;
-    margin-left: 0;
-    padding-left: 0;
-    margin-top: 5%;
+    margin-left: 2%;
+    padding-left: 2%;
+    margin-top: 1%;
   }
-  
+
+  .prdct-info h2 {
+    font-size: 1.2rem;
+  }
+
   .specs {
     margin-top: 10%;
+
   }
-  
+
   .about-item {
     margin-top: 5%;
   }
-  
+
   .highlighted {
-    font-weight: bolder;
-    font-size: larger;
-    color:darkolivegreen;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: darkolivegreen;
     text-shadow: 1px 1px 2px rgb(241, 37, 37);
-  
+
   }
-  
+
   #suggestions {
     position: absolute;
     display: none;
@@ -979,12 +1012,12 @@ footer {
     left: 47%;
     top: 80%;
   }
-  
+
   #suggestions div {
     padding: 10px;
     cursor: pointer;
   }
-  
+
   #suggestions div:hover {
     background-color: rgb(221, 77, 77);
     color: black;
