@@ -139,7 +139,6 @@ header {
 
 .searchsection::placeholder {
   color: white;
-  size: 2em;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: bolder;
   text-align: center;
@@ -448,6 +447,13 @@ footer {
 .about-us {
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+.about-us h2{
+  line-height: 5;
+}
+.about-us span{
+  color: red;
 }
 
 /**product page design**/
@@ -635,7 +641,7 @@ footer {
 
   .searchsection::placeholder {
     color: white;
-    size: 1rem;
+    font-size: 0.8rem;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bolder;
     text-align: center;
